@@ -1,12 +1,61 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌍 React World Tour
 
-Currently, two official plugins are available:
+A responsive and interactive React application that showcases a curated list of world tours. Users can explore various tours, read detailed descriptions, and manage their tour selections seamlessly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* **Interactive Tour Listings**: Browse through a variety of world tours with images, prices, and brief descriptions.
+* **Detailed View**: Expand tour descriptions to read more about each destination.
+* **Tour Management**: Remove tours from the list to customize your viewing experience.
+* **Data Fetching**: Dynamically fetches tour data from an external API.
+* **Responsive Design**: Ensures optimal viewing on devices of all sizes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+* **React**: Front-end library for building user interfaces.
+* **Vite**: Next-generation front-end tooling for faster development.
+* **CSS Modules**: Scoped and modular CSS for styling components.
+* **ESLint**: Linting utility to maintain code quality and consistency.
+
+## 📦 Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/mohan-shil/React-World-Tour.git
+   cd React-World-Tour
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+   The application will be available at `http://localhost:5173`.
+
+## 📁 Project Structure
+
+```
+React-World-Tour/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Tour.jsx
+│   │   ├── Tours.jsx
+│   │   └── Loading.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md
+```
