@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./country.css";
 
 
-const Country = ({country}) => {
+const Country = ({country, handleVisitedCountry}) => {
     
     const {name, flags, area, population, cca3} = country;
 
@@ -12,9 +12,12 @@ const Country = ({country}) => {
         setVisited(!visited);
     }
      
+    console.log(handleVisitedCountry);
+    
+
     return (
-        <div className="country">
-            <h3> Name: {name.common}  </h3>
+        <div className={`country ${visited && 'visited'}`}>
+            <h3 style={{color: visited ? 'Green': 'White'}} > Name: {name.common}  </h3>
             <img src={flags.png} alt="" />
             <p> Population: {population} </p>
             <p> Land Area: {area}  </p>
