@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./country.css";
 
 
-const Country = ({country, handleVisitedCountry}) => {
+const Country = ({country, handleVisitedCountry, handleVisitedFlags}) => {
     
     const {name, flags, area, population, cca3} = country;
 
@@ -21,6 +21,9 @@ const Country = ({country, handleVisitedCountry}) => {
             <p> Land Area: {area}  </p>
             <p> <small> Code : {cca3} </small ></p>
             <button onClick={() => handleVisitedCountry(country)} > Mark Visited </button>
+            <br />
+            <br />
+            <button onClick={() => handleVisitedFlags(flags)} > Add Flag </button>
             <br />
             <br />
             <button onClick={handleVisited}> Visited </button>
